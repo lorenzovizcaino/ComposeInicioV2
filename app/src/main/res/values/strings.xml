@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ComposeInicioV2</string>
+    <string name="title_activity_main_ej2_column">MainActivityEj2Column</string>
+    <string name="title_activity_main_ej3_column">MainActivityEj3Column</string>
+    <string name="title_activity_main_ej3_row">MainActivityEj3Row</string>
+    <string name="title_activity_main_ej1_tabla">MainActivityEj1Tabla</string>
+    <string name="title_activity_main_ej5_column">MainActivityEj5Column</string>
+    <string name="title_activity_main_ej6_mix">MainActivityEj6Mix</string>
+</resources>
