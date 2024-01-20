@@ -13,8 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.composeiniciov2.R
 
 class Ej5_column {
     private @Composable
@@ -30,29 +32,33 @@ class Ej5_column {
 
     @Composable
     fun ColumnPreview() {
-        Box(modifier = Modifier.background(Color.Yellow).padding(40.dp)) {
+        Box(modifier = Modifier
+            .background(Color.Yellow)
+            .padding(40.dp)) {
 
 
         Column(
-            modifier = Modifier.fillMaxSize().background(Color.Cyan),
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Cyan),
             verticalArrangement = Arrangement.SpaceBetween
         ) {
             Greeting(
-                name = "Hola",
+                name = stringResource(R.string.hola),
                 modifier = Modifier
 
 
             )
 
             Greeting(
-                name = "JetPack Compose",
+                name = stringResource(id = R.string.jetpack_compose),
                 modifier = Modifier
 
 
             )
 
             Greeting(
-                name = "otro texto hardcodeado",
+                name = stringResource(R.string.otro_texto_hardcodeado),
                 modifier = Modifier
                     .align(Alignment.End)
 

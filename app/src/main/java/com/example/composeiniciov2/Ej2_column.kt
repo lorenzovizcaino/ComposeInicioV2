@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 
 class Ej2_column {
@@ -20,9 +21,7 @@ class Ej2_column {
 
     @Preview(
         showSystemUi = true,
-        name="MRN ExComposeApp_Column",
-//        widthDp= 400,
-//        heightDp = 200
+
     )
 
     @Composable
@@ -41,19 +40,19 @@ class Ej2_column {
         )
         {
             Greeting(
-                name = "Texto1",
+                name = stringResource(R.string.texto1),
                 modifier =Modifier
                     .background(Color.LightGray)
                 //  .weight(2f)
             )
             Greeting(
-                name = "Texto2",
+                name = stringResource(R.string.texto2),
                 modifier =Modifier
                     .background(Color.Yellow)
                 //  .weight(1f)
             )
             Greeting(
-                name = "Texto3",
+                name = stringResource(R.string.texto3),
                 modifier =Modifier
                     .background(Color.Cyan)
                 //  .weight(1f)

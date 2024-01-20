@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 
 class Ej3_column {
@@ -42,22 +43,22 @@ class Ej3_column {
         )
         {
             Greeting(
-                name = "Texto1",
-                modifier =Modifier
+                name = stringResource(id = R.string.texto1),
+                modifier = Modifier
                     .background(Color.Red)
                     .weight(1f)
             )
             Greeting(
-                name = "Texto2",
-                modifier =Modifier
+                name = stringResource(id = R.string.texto2),
+                modifier = Modifier
                     .fillMaxSize()
                     .background(Color.Yellow)
                     .weight(1f)
 
             )
             Greeting(
-                name = "Texto3",
-                modifier =Modifier
+                name = stringResource(id = R.string.texto3),
+                modifier = Modifier
                     .background(Color.Green)
                     .weight(2f)
             )

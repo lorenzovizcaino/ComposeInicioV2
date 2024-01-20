@@ -12,9 +12,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.composeiniciov2.R
 
 class Ej6_Mix {
     private @Composable
@@ -38,12 +40,12 @@ class Ej6_Mix {
             Column(modifier = Modifier
                 .fillMaxWidth()
                 .background(Color.Cyan)){
-                Text(modifier=Modifier.align(Alignment.CenterHorizontally),text = "hi")
-                Text(modifier=Modifier.align(Alignment.CenterHorizontally),text = "teis")
+                Text(modifier=Modifier.align(Alignment.CenterHorizontally),text = stringResource(R.string.hola))
+                Text(modifier=Modifier.align(Alignment.CenterHorizontally),text = stringResource(R.string.teis))
                 for(i in 0..2){
                     Row(){
-                        Text(text = "hi")
-                        Text(modifier=Modifier.fillMaxWidth(),text = "teis",textAlign = TextAlign.End)
+                        Text(text = stringResource(id = R.string.hola))
+                        Text(modifier=Modifier.fillMaxWidth(),text = stringResource(R.string.teis),textAlign = TextAlign.End)
 
                     }
                 }

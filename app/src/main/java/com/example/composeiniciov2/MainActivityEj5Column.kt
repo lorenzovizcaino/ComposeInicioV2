@@ -14,7 +14,7 @@ import com.example.composeinicio.Ej5_column
 import com.example.composeiniciov2.ui.theme.ComposeInicioV2Theme
 
 class MainActivityEj5Column : ComponentActivity() {
-    var ej5=Ej5_column()
+    var ej5Column=Ej5_column()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -24,7 +24,7 @@ class MainActivityEj5Column : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    ej5.ColumnPreview()
+                    ej5Column.ColumnPreview()
                 }
             }
         }
@@ -37,7 +37,7 @@ class MainActivityEj5Column : ComponentActivity() {
 @Composable
 fun GreetingPreview5() {
     ComposeInicioV2Theme {
-        var ej5=Ej5_column()
-        ej5.ColumnPreview()
+        var ej5Column=Ej5_column()
+        ej5Column.ColumnPreview()
     }
 }

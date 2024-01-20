@@ -13,6 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
@@ -31,7 +32,10 @@ class Ej4_row {
     @Composable
     fun RowComp(){
         Row(
-            modifier=Modifier.fillMaxWidth().background(Color.Cyan).padding(20.dp),//lo que ocupa
+            modifier= Modifier
+                .fillMaxWidth()
+                .background(Color.Cyan)
+                .padding(20.dp),//lo que ocupa
             //Definición posición vertical
             //En vez de verticalAlignment se podrían aplicar pesos weight en este caso en los Greeting()
             verticalAlignment = Alignment.CenterVertically,
@@ -46,12 +50,12 @@ class Ej4_row {
         {
 
             Greeting(
-                name = "Hola, Texto Hardcodeado",
+                name = stringResource(R.string.hola_texto_hardcodeado),
 
             )
             Greeting(
-                name = "JetPack Compose",
-                modifier =Modifier
+                name = stringResource(R.string.jetpack_compose),
+                modifier = Modifier
                     .background(Color.Magenta)
                     .align(Alignment.Top)
 

@@ -12,10 +12,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.composeiniciov2.ui.theme.ComposeInicioV2Theme
 
 class MainActivityEj4Row : ComponentActivity() {
+    var ej4Row= Ej4_row()
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContent {
-            var ej4Row= Ej4_row()
+
             ComposeInicioV2Theme {
                 // A surface container using the 'background' color from the theme
                 Surface(
@@ -31,7 +33,7 @@ class MainActivityEj4Row : ComponentActivity() {
 
 
 
-@Preview(showBackground = true)
+@Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview3() {
     ComposeInicioV2Theme {
